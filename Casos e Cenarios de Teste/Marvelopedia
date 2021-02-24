@@ -1,0 +1,161 @@
+Casos de Testes
+
+	- Validar a criação de login
+		- Com email invalido
+		- Com email ja existente
+		- Com email formal
+	- Validar os criterios de criação de senha
+		- Com letra maiscula, minuscula, caracterer especial e número
+		- Com apenas números
+		- Com apenas letras
+		- Com letras e números
+		- Com letras e caracteres especiais
+		- Com numeros e caracteres especiais
+	- Validar o acesso a plataforma com login criado 
+	- Validar busca por nome de Heroi
+	- Validar campo pesquisa
+	- Validar a usabilidade
+
+--------------------------------------------------------------------------------------------------	
+
+Cenário de teste:
+1- 
+Cenário: Validar a criação de login
+Dado que como usuário novo
+Quando pressionar a opção "Criar uma conta"
+E preencher o campo de e-mail com "abcd@gmail.com"
+E preencher o campo da senha com "123456"
+E clicar no botão “Cadastrar“
+Então deve ser exibir mensagem “Conta cadastrada com sucesso“
+
+2- 
+Cenário: Validar os criterios de criação de senha
+Dado que como usuário novo
+Quando pressionar a opção "Criar uma conta"
+E preencher o campo de e-mail com "abc@gmail.com"
+E preencher o campo da senha com "12345" 
+E validar os criterios de aceite da senha
+E clicar no botão “Cadastrar“
+Então deve ser exibir mensagem “A senha deve conter 6 caracteres“
+
+3- 
+Cenário: Validar os criterios de criação de senha
+Dado que como usuário novo
+Quando pressionar a opção "Criar uma conta"
+E preencher o campo de e-mail com "abc@gmail.com"
+E preencher o campo da senha com "1234@" 
+E validar os criterios de aceite da senha
+E clicar no botão “Cadastrar“
+Então deve ser exibir mensagem “A senha deve conter 6 caracteres“
+
+4- 
+Cenário: Validar a criação de login
+Dado que como usuário novo
+Quando pressionar a opção "Criar uma conta"
+E preencher o campo de e-mail com "abcd$gmail.com"
+E preencher o campo da senha com "123456"
+E clicar no botão “Cadastrar“
+Então deve ser exibir mensagem “Necessario um email válido“
+
+--------------------------------------------------------------------------------------------------
+
+Marvelopedia
+Erros encontrados 
+
+- Erros de lib
+- Mensagem de erro em ingles
+- Ao cadastrar um novo usuário os campos com login e senha não são limpos
+- Ao tentar efetuar login é apresentado mensagem em ingles
+- Caso a tela de login seja preenchida com um login invalido e efetuar acesso a outra tela do app e retornar a tela de login os campos contiam com os dados preenchidos com o login invalido
+- Ao pesquisar por herois nem todas as img são carregadas ou contem img repetidas para diferentes herois
+- Campo pesquisa no menu herois não funciona 
+- Não possui nenhum botão para voltar ao inicio da pagina
+- Não ter especificação 
+- Ao adicionar no carrinho ja deveria contar como 1un isso evita mais uma ação do usuario 
+- Ao selecionar alguns herois no menu "herois" não é possivel voltar a tela inicial 
+- Ao fechar o app o sistema não continua logado 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
